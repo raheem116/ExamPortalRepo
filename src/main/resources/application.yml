@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: examService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam?serverTimeZone=UTC
+    username: root
+    password: "@Ar799116"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect # Add this line for the dialect
+
+
+
+
